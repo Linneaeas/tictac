@@ -1,5 +1,13 @@
 <div class="gameContainer">
-  <div class="gameBoard"></div>
+  <div class="gameBoard">
+    <div
+      *ngFor="let square of board; let i = index"
+      (click)="handlePlayer(i)"
+      class="square"
+    >
+      {{ square }}
+    </div>
+  </div>
   <div class="circle"></div>
   <div class="circle1"></div>
 </div>

@@ -39,8 +39,12 @@ export class GameComponent implements OnInit{
         this.board[p2]==this.board[p3] &&
         this.board[p1]==this.board[p3]
         ){
-    alert("Player"+this.board[p1]+" has won the game")
+    alert("Player "+this.board[p1]+" has won the game")
+    this.resetGame(); 
     }
   }
 }
+resetGame() {
+  this.board = new Array(9).fill("");
+  this.player_turn = "X";}
 }

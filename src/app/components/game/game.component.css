@@ -27,7 +27,7 @@
   border-width: 2px;
   border-style: solid;
   border-color: white;
-  color: black;
+  color: rgb(225, 90, 211);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +42,17 @@
   );
   backdrop-filter: blur(0.4rem);
 }
+
+h3 {
+  position: absolute;
+  top: 4%;
+  color: rgb(82, 99, 168);
+}
+
+.playerO {
+  color: rgb(133, 50, 211);
+}
+
 .circle,
 .circle1 {
   width: 10rem;

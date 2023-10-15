@@ -28,6 +28,10 @@
   border-style: solid;
   border-color: white;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
 .square:hover {
   cursor: pointer;

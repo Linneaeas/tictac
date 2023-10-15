@@ -27,5 +27,20 @@ export class GameComponent implements OnInit{
   handlePlayer(index:number){
     this.board[index]=this.player_turn
     this.player_turn=(this.player_turn=="X")? "O":"X";
+
+    for(let i=0;i<this.winning_border.length;i++){
+    let winning_check=this.winning_border[i]
+
+     let p1 =winning_check[0];
+     let p2=winning_check[1];
+     let p3=winning_check[2];
+     if(this.board[p1]!="" && 
+        this.board[p1]==this.board[p2] &&
+        this.board[p2]==this.board[p3] &&
+        this.board[p1]==this.board[p3]
+        ){
+    alert("Player"+this.board[p1]+" has won the game")
+    }
   }
+}
 }
